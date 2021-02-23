@@ -1,13 +1,17 @@
-const userNumberN = + (prompt('Please write nitial number'));
-const userNumberM = + (prompt('Please write final number'));
+let userNumberN = + (prompt('Please write nitial number'));
+let userNumberM = + (prompt('Please write final number'));
 
-// const whetherItIsAnIntegerNumberN = (Number.isInteger(userNumberN));
-// const whetherItIsAnIntegerNumberM = (Number.isInteger(userNumberM));
+let sumNumbers = 0;
+while (isNaN(userNumberN) && isNaN(userNumberM)) {
+  alert('Please enter a number')
+  userNumberN = + (prompt('Please write nitial number'));
+  userNumberM = + (prompt('Please write final number'));
+} 
 
 const integerNumberN = parseInt(userNumberN);
 const integerNumberM = parseInt(userNumberM);
 
-let sumNumbers = 0;
+
 if (integerNumberN > integerNumberM) {
   alert('The initial number cannot be greater than the final number. Enter the number again.')
 }
