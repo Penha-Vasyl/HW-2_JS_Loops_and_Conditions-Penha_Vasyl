@@ -2,13 +2,9 @@ let userNumberN = + (prompt('Please write nitial number'));
 let userNumberM = + (prompt('Please write final number'));
 
 let sumNumbers = 0;
-while (isNaN(userNumberN)) {
+while (isNaN(userNumberN) || isNaN(userNumberM)) {
   alert('Please enter a number')
   userNumberN = + (prompt('Please write nitial number'));
-} 
-
-while (isNaN(userNumberM)) {
-  alert('Please enter a number')
   userNumberM = + (prompt('Please write final number'));
 } 
 
