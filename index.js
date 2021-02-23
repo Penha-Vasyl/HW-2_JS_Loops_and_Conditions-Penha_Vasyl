@@ -1,12 +1,12 @@
-let userNumberN = + (prompt('Please write nitial number'));
-let userNumberM = + (prompt('Please write final number'));
+let userNumberN = '';
+let userNumberM = '';
 
 let sumNumbers = 0;
-while (isNaN(userNumberN) || isNaN(userNumberM)) {
-  alert('Please enter a number')
-  userNumberN = + (prompt('Please write nitial number'));
+do {
+  userNumberN = + (prompt('Please write іnitial number'));
   userNumberM = + (prompt('Please write final number'));
-} 
+}
+while (isNaN(userNumberN) || isNaN(userNumberM))
 
 const integerNumberN = parseInt(userNumberN);
 const integerNumberM = parseInt(userNumberM);
