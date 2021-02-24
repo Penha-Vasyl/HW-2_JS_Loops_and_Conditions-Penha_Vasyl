@@ -20,7 +20,7 @@ const integerNumberM = parseInt(userNumberM);
 const skipEvenNumbers = confirm('Whether to skip even numbers?');
 
 for (let i = integerNumberN; i <= integerNumberM; i++) {
-  if (skipEvenNumbers === false || i % 2 !== 0) {
+  if (skipEvenNumbers === false || (i % 2)) {
     sumNumbers += i;
   }
 }
